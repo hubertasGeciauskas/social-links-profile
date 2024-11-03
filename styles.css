@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  --grey-900: hsl(0, 0%, 8%);
+  --grey-800: hsl(0, 0%, 12%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --green: hsl(75, 94%, 57%);
+}
+
+body {
+  padding: 1px;
+  background-color: var(--grey-900);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  color: var(--white);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--grey-800);
+  padding: 24px;
+  max-width: 327px;
+  max-height: 579px;
+  border-radius: 12px;
+  gap: 24px;
+}
+
+.text-present-1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.text-present-2 {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.text-present-2-bold {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.green {
+  color: var(--green);
+}
+
+.btn {
+  background-color: var(--grey-700);
+  padding: 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--green);
+  color: var(--grey-700);
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .card {
+    padding: 40px;
+    max-width: 456px;
+    max-height: 611px;
+    width: 611px;
+    height: 611px;
+  }
+}
+/* Desktop */
+@media (min-width: 1024px) {
+  .card {
+    max-width: 384px;
+    width: 384px;
+  }
+}
