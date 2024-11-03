@@ -59,14 +59,24 @@ h6 {
   --green: hsl(75, 94%, 57%);
 }
 
+html,
 body {
-  padding: 1px;
+  padding: 5px;
+  height: 100%;
+}
+
+body {
   background-color: var(--grey-900);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: "Inter", sans-serif;
   font-size: 0.875rem;
   color: var(--white);
+  overflow-y: auto;
+}
+
+main {
+  min-height: 100vh;
 }
 
 .card {
